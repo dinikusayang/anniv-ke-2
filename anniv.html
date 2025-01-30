@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY BUBUB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+         background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+             color: #e74c3c;
+            font-size: 3em;
+            font-family: 'Dancing Script', cursive;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+
+                #countdown {
+            font-size: 2em;
+            margin: 20px 0;
+            color: #2c3e50;
+            animation: slideUp 1.5s ease-in-out;
+        }
+        #message {
+        	font-family: 'poppins', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 20px;
+            background: #ffe6e6;
+            max-width: 1000px;
+             margin: 20px auto;
+              padding: 15px;
+              ox-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            color: #e74c3c;
+            text-align: left;
+            border-radius: 10px;
+            line-height: 1,6;
+            display: none; 
+
+        }
+        #photo {
+            width: 200px;
+            height: auto;
+            border-radius: 20px;
+            margin: 20px;
+            border: 5px solid #e74c3c;
+            cursor: pointer;
+            animation: rotate 10s linear infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Anniv Ke 2 Tahun, Babe
+        </h1>
+        <div id="countdown"></div>
+
+        <img id="photo" src="poto3.jpg" alt="Foto Kita" onclick="showMessage()">
+        <div id="message">Happy Anniversary ke 2 tahun, sayangku, maaf saya belum bisa kasih hadiah yang wow banget ya, but ini dari hati saya, sayangku❤️, saya ingat banget waktu kita ke binjai saya ga sengaja pegang tangan mu pas nyebrang dan yap saya baru sadar pas kita udah disebrang dan saya malu banget parahhh, dan ga terasa kita udah sejauh ini ya, babe, banyak pasang surut yang kita lewatkan, banyak masalah yang kita hadapi, dan semakin tahun ya semakin berat cobaan yang kita alami, tapi dirimu perlu tau kalo rasa sayang saya gapernah berubah, saya sayang banget samamu, walau kadang ada kelakuan saya yang nyakitin diirimu, jalani hubungan itu jujur berat karena dua individu, beda pemikiran, beda jalan ninja (klo di naruto) tapi tetap harus kita lewati, kita cuma kurang saling memahami, terutama saya, dirimu mah banyak banget memahami saya, jadi dirimu sakit banget pasti, jalani hubungan sama laki2 yang belum dewasa kea saya hehe, saya harap dirimu bisa tahan sama saya smpe kita liang lahat ya sayang, kalo dirimu ga tahan sama saya gapapa, saya gamau nyakitin dirimu lagi hehehe maafin saya ya, dan makasih udah jalani hubungan sama saya hingga sejauh ini, i love you more</div>
+    </div>
+
+    <script src="anniv.js"></script>
+</body>
+</html>
